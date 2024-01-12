@@ -1,6 +1,7 @@
 #include<iostream>
 using namespace std;
 int main(){
+
     //  * * * 
     //  * * * 
     //  * * * 
@@ -15,6 +16,7 @@ for(int i = 0 ; i < n ; i++){
   cout<<endl;
   }
   
+
      //  1 1 1 
      //  2 2 2 
      //  3 3 3 
@@ -120,5 +122,125 @@ for(int i = 0 ; i < n ; i++){
         cout<<endl;
       }
 
+
+      // 1
+      // 2 3
+      // 3 4 5
+      // 4 5 6 7
+      cout<<"Pattern 10"<<endl;
+      int count3 = 1;
+      for(int i=1; i <=n ; i++){
+        int x = i;
+        for(int j=1 ; j <=i ;j++){
+            cout<<x<<" ";
+            x++;
+        }
+        cout<<endl;
+      }
+
+
+      // 1
+      // 2 1
+      // 3 2 1
+      // 4 3 2 1
+      cout<<"Pattern 11"<<endl;
+      for(int i=1;i<=n;i++){
+        int x1 = i;
+        for(int j=1; j <=i;j++){
+          cout<<x1<<" ";
+          x1--;
+        }
+        cout<<endl;
+      }
+
+
+
+      // A A A
+      // B B B
+      // C C C
+      cout<<"Pattern 12"<<endl;
+      for(int i=1;i <=n;i++){
+        char a = 'A' + i -1;
+        for(int j =1 ; j <= n ; j++){
+          cout<<a<<" ";
+        }
+        cout<<endl;
+      }
+
+
+      // A B C
+      // A B C
+      // A B C
+      cout<<"Pattern 13"<<endl;
+      for(int i=1; i <=n ; i++){
+        for(int j=1; j <=n ; j++){
+          char b = 'A' + j -1;
+          cout<<b<<" ";
+        }
+        cout<<endl;
+      }
+
+
+      // A B C
+      // D E F
+      // G H I
+      cout<<"Pattern 14"<<endl;
+      int count4 =1;
+      for(int i=1; i <=n;i++){
+        for(int j =1 ; j<=n;j++){
+          char ch = 'A'+count4-1;
+          cout<<ch<<" ";
+          count4++;
+        }
+        cout<<endl;
+      }
+
+
+      // A B C
+      // B C D
+      // C D E
+      cout<<"Pattern 15"<<endl;
+      for(int i=1; i<=n;i++){
+        int count5 = i;
+        for(int j=1;j<=n;j++){
+          char ch2 = 'A'+count5-1;
+          cout<<ch2<<" "; 
+          count5++;
+        }
+        cout<<endl;
+      }
+
+
+
+      // A 
+      // B B
+      // C C C
+      cout<<"Pattern 16"<<endl;
+      for(int i=1; i<=n ; i++){
+        for(int j=1;j<=i;j++){
+          char ch3 = 'A' +i -1; 
+          cout<<ch3<<" ";
+        }
+        cout<<endl;
+      }
+       
+      
+      // A 
+      // B C
+      // D E F
+      cout<<"Pattern 17"<<endl;
+      int count6 = 1;
+      for(int i=1; i<=n ; i++){
+        for(int j=1;j<=i;j++){
+          char ch4 = 'A'+count6-1;
+          cout<<ch4<<" ";
+          count6++;
+        }
+        cout<<endl;
+      }
+
+
+      
   return 0;
 }
+
