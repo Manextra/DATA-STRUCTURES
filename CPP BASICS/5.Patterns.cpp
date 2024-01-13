@@ -365,8 +365,30 @@ for(int i = 0 ; i < n ; i++){
         }
         cout<<endl;
       }
+      
 
 
+      //      1  
+      //    1 2 1   
+      //  1 2 3 2 1 
+      cout<<"Pattern 26"<<endl;
+      int count13 = 1;
+      for(int i=1;i<=n;i++){
+        for(int j=1;j<=n-i;j++){
+          cout<<"  ";
+        }
+        for(int j=n-i+1;j<=n;j++){
+          cout<<count13<<" ";
+          count13++;
+        }
+        count13 =1;
+       int  start = i-1;
+        while(start){
+          cout<<start<<" ";
+          start--;
+        }
+        cout<<endl;
+      }
   return 0;
 }
 
