@@ -240,7 +240,133 @@ for(int i = 0 ; i < n ; i++){
       }
 
 
+      // A 
+      // B C
+      // C D E
+      cout<<"Pattern 18"<<endl;
+      for(int i=1;i<=n;i++){
+        int count7 = i;
+        for(int j=1;j<=i;j++){
+          char ch5 = 'A'+count7-1;
+          cout<<ch5<<" ";
+          count7++;
+        }
+        cout<<endl;
+      }
       
+
+      // D
+      // C D
+      // B C D
+      // A B C D
+      cout<<"Pattern 19"<<endl;
+      int y;
+      for(int i=1;i<=n;i++){
+        y=i;
+        for(int j=1;j<=i;j++){
+          char ch6 = 'A'+n-y;
+          cout<<ch6<<" ";
+          y--;
+        }
+        cout<<endl;
+      }
+
+
+      //       *
+      //     * *
+      //   * * *
+      // * * * *
+      cout<<"Pattern 20"<<endl;
+      for(int i=1;i <=n;i++){
+        for(int j=1;j<=n-i;j++){
+          cout<<"  ";
+        }
+        for(int j=n-i+1 ; j<=n ;j++){
+          cout<<"* ";
+        }
+        cout<<endl;
+      }
+
+
+      // * * * *     
+      // * * *    
+      // * * 
+      // * 
+      cout<<"Pattern 21"<<endl;
+      for(int i=1;i<=n;i++){
+        for(int j=1;j<=n-i+1;j++){
+          cout<<"* ";
+        }
+        cout<<endl;
+      }
+
+       
+      // * * * *     
+      //   * * *  
+      //     * * 
+      //       *
+      cout<<"Pattern 22"<<endl;
+      for(int i=1;i<=n;i++){
+        for(int j=1;j<=i-1;j++){
+          cout<<"  ";
+        }
+        for(int j=i;j<=n;j++){
+          cout<<"* ";
+        }
+        cout<<endl;
+      }
+
+
+      // 1 1 1 1   
+      //   2 2 2  
+      //     3 3
+      //       4
+      cout<<"Pattern 23"<<endl;
+      for(int i=1;i<=n;i++){
+        for(int j=1; j<=i-1;j++){
+          cout<<"  ";
+        }
+        for(int j=i;j<=n;j++){
+          cout<<i<<" ";
+        }
+        cout<<endl;
+      }
+
+
+      //       1   
+      //     2 2  
+      //   3 3 3
+      // 4 4 4 4
+      cout<<"Pattern 24"<<endl;
+      for(int i=1;i<=n;i++){
+        for(int j=1;j<=n-i;j++){
+          cout<<"  ";
+        }
+        for(int j=n-i+1;j<=n;j++){
+          cout<<i<<" ";
+        }
+        cout<<endl;
+      }
+
+
+      //       1   
+      //     2 3  
+      //   4 5 6
+      // 7 8 9 10
+      int count12 = 1;
+      cout<<"Pattern 25"<<endl;
+      for(int i=1;i<=n;i++){
+        for(int j=1;j<=n-i;j++){
+          cout<<"  ";
+        }
+        for(int j=n-i+1; j <=n ;j++){
+          cout<<count12<<" ";
+          count12++;
+        }
+        cout<<endl;
+      }
+
+
   return 0;
 }
 
