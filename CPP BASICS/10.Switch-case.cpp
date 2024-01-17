@@ -72,6 +72,36 @@ int main(){
 
 
   // Notes and Amount
-  
+  int amount;
+  int n100= 0,n50 = 0,n20 = 0,n10 = 0;
+
+  cout<<"Enter the amount u want to split: ";
+  cin>>amount;
+  switch(amount >= 100){
+    case 1:
+      n100 = amount/100;
+      amount = amount -n100*100;
+  }
+   switch(amount >= 50){
+    case 1:
+      n50 = amount/50;
+      amount = amount -n50*50;
+  }
+   switch(amount >= 20){
+    case 1:
+      n20 = amount/20;
+      amount = amount -n20*20;
+    
+  }
+   switch(amount >= 10){
+    case 1:
+      n10 = amount/10;
+      amount = amount -n10*10;
+      break;
+  }
+  cout<<"100 rupee notes needed: "<<n100<<endl;
+  cout<<"50 rupee notes needed: "<<n50<<endl;
+  cout<<"20 rupee notes needed: "<<n20<<endl;
+  cout<<"100 rupee notes needed: "<<n10<<endl;
 }
 //  exit() terminates the entire program and returns control to the operating system, while break only terminates the current loop or switch statement and transfers control to the next statement.
