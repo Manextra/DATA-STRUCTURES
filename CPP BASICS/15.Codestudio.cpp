@@ -20,3 +20,28 @@ int findDuplicate(vector<int> &arr)
     }
     return ans;
 }
+#include <bits/stdc++.h> 
+void sort012(int *arr, int n)
+{
+   int left = 0;
+   int mid = 0;
+   int right = n-1;
+   while(mid <= right){
+     switch (arr[mid]) {
+     case 0:
+       swap(arr[left], arr[mid]);
+       left++;
+       mid++;
+       break;
+
+       case 1:
+       mid++;
+       break;
+
+       case 2:
+       swap(arr[mid],arr[right]);
+       right--;
+       break;
+     }
+   }
+}
